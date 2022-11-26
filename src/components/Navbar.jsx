@@ -1,11 +1,14 @@
 import React from "react";
+import {Link} from "react-router-dom"
 
 const Navbar = () => {
-  return <nav className="w-full flex flex-wrap items-center justify-between py-3 bg-gray-900 text-gray-200 shadow-lg navbar navbar-expand-lg fixed-top">
+  return (
+    <>
+  <nav className="w-full flex flex-wrap items-center justify-between py-3 bg-gray-900 text-white shadow-lg navbar navbar-expand-lg fixed-top">
   <div className="container-fluid w-full flex items-center justify-between px-6">
-      <a className="text-xl text-white pr-2 font-semibold" href="#">
-        Navbar
-      </a>
+      <Link className="text-2xl pr-2 font-semibold" to="/">
+        React Movie App
+      </Link>
     {/* Collapsible wrapper */}
     {/* Right elements */}
     <div className="flex items-center relative">
@@ -62,7 +65,11 @@ const Navbar = () => {
     {/* Right elements */}
   </div>
 </nav>
+<div className="h-[52px]">
 
+</div>
+</>
+  )
 };
 
 export default Navbar;
