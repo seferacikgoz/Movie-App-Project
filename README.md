@@ -102,6 +102,7 @@ const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 ```
 
+
 - Use this method to `Sign up new users` :
 
 ```jsx
